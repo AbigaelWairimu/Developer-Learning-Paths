@@ -40,3 +40,65 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+/*let buttons = document.querySelectorAll('#filterSection button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        let category = this.getAttribute('data-category');
+        let items = document.querySelectorAll('#linkSelection .group');
+        
+        items.forEach(item => {
+            if(item.getAttribute('data-category') === category || category === 'all') {
+                item.style.display = 'grid'; 
+            } else {
+                item.style.display = 'none'; 
+            }
+        });
+        
+    });
+}); */
+
+
+
+
+
+
+function filterSelection(filter) {
+    let items = document.querySelectorAll('.containerWithLinkBtn .group');
+    
+    // If "all" is selected, show all items
+    if(filter === "all") {
+        items.forEach(item => item.style.display = "block");
+        return;
+    }
+
+    // Otherwise, hide or show items based on the filter
+    items.forEach(item => {
+        if(item.classList.contains(filter)) {
+            item.style.display = "grid";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+// Add event listeners to the buttons
+let btns = document.querySelectorAll('.btnFilter');
+btns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        // Remove the "active" class from all buttons
+        btns.forEach(btn => btn.classList.remove('active'));
+
+        // Add the "active" class to the clicked button
+        this.classList.add('active');
+
+        // Filter the items
+        filterSelection(this.dataset.filter);
+    });
+});
+
+// Show all items by default
+filterSelection("all");
+window.filterSelection = filterSelection;

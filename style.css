@@ -7,3 +7,10 @@
       @apply m-0 p-0 box-border;
     }
   }
+
+  @layer components {
+    .active {
+      background-color: #4477CE;
+	    color: white;
+    }
+  }

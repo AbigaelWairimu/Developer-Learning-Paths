@@ -5,14 +5,16 @@ export default {
     "./**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      'background': '#512B81',
-      'navigation': '#35155D',
-      'primary': '#4477CE',
-      'secondary': '#8CABFF',
-      'textcol': '#F8F8FF',
+    extend: {
+      colors: {
+        'background': '#002244',
+        'navigation': '#132257',
+        'primary': '#4477CE',
+        'secondary': '#8CABFF',
+        'textcol': '#F8F8FF',
+      },
     },
+    
   },
   plugins: [],
 }
