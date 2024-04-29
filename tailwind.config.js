@@ -12,6 +12,8 @@ export default {
         'primary': '#4477CE',
         'secondary': '#8CABFF',
         'textcol': '#F8F8FF',
+        'darkwhite': '#D9D9D9',
+        'lightwhite': '#EDEADE',
       },
     },
     
