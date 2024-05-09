@@ -102,3 +102,60 @@ btns.forEach(btn => {
 // Show all items by default
 filterSelection("all");
 window.filterSelection = filterSelection;
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('backHome').addEventListener('click', function() {
+        console.log('clicked');
+        window.location.href = './index.html';
+    });
+});
+
+
+
+// send to whatsapp
+
+
+window.addEventListener("load", function() {
+    const form = document.getElementById('my-form');
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(() => {
+        document.getElementById("my-form").reset();
+      })
+    });
+  });
+
+document.getElementById('my-button').addEventListener('click', sendToWhatsapp);
+function sendToWhatsapp() {
+    let number = "+254708167366";
+
+    let FullName = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    var url = "https://wa.me/" + number + "?text="
+    + "Full name :" +FullName+ "%0a"
+    + "Email :" +email+ "%0a"
+    + "Message :" +message+ "%0a%0a"
+
+    window.open(url, '_blank').focus();
+    
+  }
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('backHome').addEventListener('click', function() {
+        console.log('clicked');
+        window.location.href = './index.html';
+    });
+});
