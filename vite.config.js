@@ -1,20 +1,14 @@
-export const pages = {
-    '/frontend': {
-        entry: 'src/pages/frontend.html'
-    },
-    '/backend': {
-        entry: 'src/pages/backend.html'
-    },
-    '/communities': {
-        entry: 'src/pages/communities.html'
-    },
-    '/contact': {
-        entry: 'src/pages/contact.html'
-    },
-    '/guides': {
-        entry: 'src/pages/guides.html'
-    },
-    '/videos': {
-        entry: 'src/pages/videos.html'
+export default {
+    build: {
+      rollupOptions: {
+        input: {
+          frontend: 'src/pages/frontend.html',
+          backend: 'src/pages/backend.html',
+          communities: 'src/pages/communities.html',
+          contact: 'src/pages/contact.html',
+          guides: 'src/pages/guides.html',
+          videos: 'src/pages/videos.html'
+        }
+      }
     }
-};
+  }
