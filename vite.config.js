@@ -1,22 +1,20 @@
-module.exports = {
-    pages: {
-      '/frontend': {
+export const pages = {
+    '/frontend': {
         entry: 'src/pages/frontend.html'
-      },
-      '/backend': {
+    },
+    '/backend': {
         entry: 'src/pages/backend.html'
-      },
-      '/communities': {
+    },
+    '/communities': {
         entry: 'src/pages/communities.html'
-      },
-      '/contact': {
+    },
+    '/contact': {
         entry: 'src/pages/contact.html'
-      },
-      '/guides': {
+    },
+    '/guides': {
         entry: 'src/pages/guides.html'
-      },
-      '/videos': {
+    },
+    '/videos': {
         entry: 'src/pages/videos.html'
-      }
     }
-  }
+};
