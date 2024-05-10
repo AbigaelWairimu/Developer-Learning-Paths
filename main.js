@@ -1,4 +1,4 @@
-import './style.css'
+import '/style.css'
 
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
