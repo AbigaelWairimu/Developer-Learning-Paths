@@ -13,13 +13,13 @@
 
   <body class="bg-background">
   <!--Navigation-->
-    <section>
+    <section role="navigation">
       <nav class="relative px-4 py-4 flex justify-between items-center bg-navigation">
         <a href="/index.html" class="text-3xl font-bold leading-none">
           <img class="h-8 w-8 lg:h-10 lg:w-10" src="/images/imagelogo.png" alt="logo">
         </a>
         <div class="lg:hidden">
-          <button class="navbar-burger flex items-center text-blue-600 p-3">
+          <button aria-label="open navigation menu" class="navbar-burger flex items-center text-blue-600 p-3">
             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#808080" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
             </svg>
           </button>
@@ -41,7 +41,7 @@
             <a href="/index.html" class="mr-auto text-3xl font-bold leading-none">
               <img class="h-8 w-8" src="/images/imagelogo.png" alt="logo">
             </a>
-            <button class="navbar-close">
+            <button aria-label="close navigation menu" class="navbar-close">
               <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#808080" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
             </button>
           </div>
@@ -67,7 +67,7 @@
       </div>     
     </section>
   <!--Hero(Introduction)-->
-    <section> 
+    <section role="presentation"> 
       <div class="mb-16 mx-auto flex flex-col items-center text-textcol text-center mt-16">
         <h1 class="text-5xl md:text-8xl pb-4 font-bold bg-gradient-to-r from-teal-200 to-teal-500 inline-block text-transparent bg-clip-text">Developer Learning paths</h1>
         <div class="m-6 text-xl leading-7">
@@ -76,99 +76,99 @@
       </div>
     </section>
   <!--Filter buttons-->
-    <section id="learningPaths" class="mt-10 text-center">
-      <button data-filter="all" class="btnFilter active text-lg text-textcol font-bold py-1 px-10 my-4 mx-2 rounded-lg border-2 shadow-2xl focus:outline-none" onclick="filterSelection('all')">All</button>
+    <section aria-label="filter learning paths" id="learningPaths" class="mt-10 text-center">
+      <button data-filter="all" aria-label="open all roles" class="btnFilter active text-lg text-textcol font-bold py-1 px-10 my-4 mx-2 rounded-lg border-2 shadow-2xl focus:outline-none" onclick="filterSelection('all')">All</button>
 
-      <button  data-filter="role" onclick="filterSelection('role')" class="btnFilter text-lg text-textcol font-bold py-1 px-9 my-4 mx-2 rounded-lg border-2 shadow-2xl focus:outline-none">Role based paths</button>
+      <button  data-filter="role" aria-label="open role based paths" onclick="filterSelection('role')" class="btnFilter text-lg text-textcol font-bold py-1 px-9 my-4 mx-2 rounded-lg border-2 shadow-2xl focus:outline-none">Role based paths</button>
 
-      <button  data-filter="skill" onclick="filterSelection('skill')"  class="btnFilter text-lg text-textcol font-bold py-1 px-9 my-4 mx-2 rounded-lg border-2 shadow-2xl focus:outline-none">Skill based paths</button>
+      <button  data-filter="skill" aria-label="open skill based paths" onclick="filterSelection('skill')"  class="btnFilter text-lg text-textcol font-bold py-1 px-9 my-4 mx-2 rounded-lg border-2 shadow-2xl focus:outline-none">Skill based paths</button>
       
     </section>
   <!--Container with path links-->
-    <section class="w-full flex flex-wrap content-center justify-around mx-auto px-2 py-5 md:px-4 lg:px-10">
+    <section aria-label="learning path links" class="w-full flex flex-wrap content-center justify-around mx-auto px-2 py-5 md:px-4 lg:px-10">
       
       <div class="containerWithLinkBtn">
         <ul class="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
           <!--Role based path-->
-          <li><a href="/src/pages/frontend.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">Frontend</a>
+          <li><a href="/src/pages/frontend.html" aria-label="go to frontend page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">Frontend</a>
           </li>
 
           <li>
-          <a href="/src/pages/backend.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">Backend</a>
+          <a href="/src/pages/backend.html" aria-label="go to backend page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">Backend</a>
           </li>
 
           <li>
-          <a href="/src/pages/devops.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">DevOps</a>
+          <a href="/src/pages/devops.html" aria-label="go to dev ops page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">DevOps</a>
           </li>
   
           <li>
-            <a href="/src/pages/ai.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">AI</a>
+            <a href="/src/pages/ai.html" aria-label="go to ai page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">AI</a>
             </li>
 
           <li>
-          <a href="/src/pages/datascience.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">Data Science</a>
+          <a href="/src/pages/datascience.html" aria-label="go to data science page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden hover:border-slate-600 hover:text-slate-100">Data Science</a>
           </li>
 
           <li>
-          <a href="/src/pages/machinelearning.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Machine Learning</a>
+          <a href="/src/pages/machinelearning.html" aria-label="go to machine learning page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Machine Learning</a>
           </li>
 
           <li>
-          <a href="/src/pages/cybersecurity.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Cybersecurity</a>
+          <a href="/src/pages/cybersecurity.html" aria-label="go to cybersecurity page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Cybersecurity</a>
           </li>
 
           <li>
-          <a href="/src/pages/blockchain.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Blockchain</a>
+          <a href="/src/pages/blockchain.html" aria-label="go to blockchain page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Blockchain</a>
           </li>
 
           <li >
-          <a href="/src/pages/flutter.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Flutter</a>
+          <a href="/src/pages/flutter.html" aria-label="go to flutter page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Flutter</a>
           </li>
 
           <li>
-          <a href="/src/pages/gamedev.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Game Development</a>
+          <a href="/src/pages/gamedev.html" aria-label="go to game development page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Game Development</a>
           </li>
 
           <li>
-          <a href="/src/pages/projectmanagement.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Project Management</a>
+          <a href="/src/pages/projectmanagement.html" aria-label="go to project management page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Project Management</a>
           </li>
 
           <li>
-            <a href="/src/pages/uxdesign.html" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">UX Design</a>
+            <a href="/src/pages/uxdesign.html" aria-label="go to ux design page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">UX Design</a>
           </li>
 
           <li>
-            <a href="#" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Software Architect</a>
+            <a href="#" aria-label="go to software architect page" class="group role border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Software Architect</a>
           </li>
 
   
         <!--Skill based path-->
           <li>
-            <a href="/src/pages/react.html" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">React</a>
+            <a href="/src/pages/react.html" aria-label="go to react page" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">React</a>
           </li>
   
           <li>
-            <a href="#" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Computer Science</a>
+            <a href="#" aria-label="go to computer science page" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Computer Science</a>
           </li>
   
             <li>
-              <a href="src/pages/python.html" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Python</a>
+              <a href="src/pages/python.html" aria-label="go to python page" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Python</a>
             </li>
       
             <li>
-              <a href="/src/pages/java.html" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Java</a>
+              <a href="/src/pages/java.html" aria-label="go to java page" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Java</a>
             </li>
       
             <li>
-              <a href="/src/pages/javascript.html" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">JavaScript</a>
+              <a href="/src/pages/javascript.html" aria-label="go to java script page" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">JavaScript</a>
             </li>
       
             <li>
-              <a href="/src/pages/angular.html" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Angular</a>
+              <a href="/src/pages/angular.html" aria-label="go to angular page" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Angular</a>
             </li>
       
             <li>
-              <a href="/src/pages/node.html" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Node.js</a>
+              <a href="/src/pages/node.html" aria-label="go to node.js page" class="group skill border border-slate-800 bg-slate-500 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-textcol overflow-hidden">Node.js</a>
             </li>
       
   <!--          <li>
@@ -290,15 +290,15 @@
       </div>        
     </section>
   <!--Container with communities links-->
-    <section class="bg-darkwhite mt-10" id="onlineCommunities">
+    <section aria-label="communities navigation links" class="bg-darkwhite mt-10" id="onlineCommunities">
       <h3 class="max-w-sm mx-auto pt-10 text-xl font-bold">Online Communities</h3>
       <div class="max-w-sm mx-auto mt-5">
             <a href="https://education.github.com/">
               <div class="p-3 flex items-center justify-between border-t cursor-pointer hover:bg-gray-200">                
                 <div class="ml-2 flex flex-col">
-                  <span href="https://education.github.com/" class="leading-snug text-base text-gray-900 font-bold">GitHub</span> 
+                  <span href="https://education.github.com/" class="leading-snug text-base text-gray-900 font-bold">GitHub</span>
                 </div>
-              <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+              <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-label="Go to Github Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
               </div>
             </a>
 
@@ -307,7 +307,7 @@
                 <div class="ml-2 flex flex-col">
                     <span href="https://stackoverflow.com/" class="leading-snug text-base text-gray-900 font-bold">Stackoverflow</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-label="Go to StackOverflow Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
               </div>
             </a>
 
@@ -316,7 +316,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://www.reddit.com/?feed=home" class="leading-snug text-base text-gray-900 font-bold">Reddit</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256C0 114.6 114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256L37.1 512c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256zM349.6 153.6c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34c-34.5 3.7-61.4 33-61.4 68.4l0 .2c-37.5 1.6-71.8 12.3-99 29.1c-10.1-7.8-22.8-12.5-36.5-12.5c-33 0-59.8 26.8-59.8 59.8c0 24 14.1 44.6 34.4 54.1c2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54c0-33-26.8-59.8-59.8-59.8c-13.7 0-26.3 4.6-36.4 12.4c-27.4-17-62.1-27.7-100-29.1l0-.2c0-25.4 18.9-46.5 43.4-49.9l0 0c4.4 18.8 21.3 32.8 41.5 32.8zM177.1 246.9c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6s-31.4-8.8-30.4-30.5s15.4-38.3 32.1-38.3zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6c-1-21.7 11.8-39.3 28.5-39.3s31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9 .8-6.2 3.9-6.5c18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1 .3 5.1 3.6 3.9 6.5z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Go to Reddit Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256C0 114.6 114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256L37.1 512c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256zM349.6 153.6c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34c-34.5 3.7-61.4 33-61.4 68.4l0 .2c-37.5 1.6-71.8 12.3-99 29.1c-10.1-7.8-22.8-12.5-36.5-12.5c-33 0-59.8 26.8-59.8 59.8c0 24 14.1 44.6 34.4 54.1c2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54c0-33-26.8-59.8-59.8-59.8c-13.7 0-26.3 4.6-36.4 12.4c-27.4-17-62.1-27.7-100-29.1l0-.2c0-25.4 18.9-46.5 43.4-49.9l0 0c4.4 18.8 21.3 32.8 41.5 32.8zM177.1 246.9c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6s-31.4-8.8-30.4-30.5s15.4-38.3 32.1-38.3zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6c-1-21.7 11.8-39.3 28.5-39.3s31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9 .8-6.2 3.9-6.5c18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1 .3 5.1 3.6 3.9 6.5z"/></svg>
              </div>
             </a>
 
@@ -325,7 +325,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://dev.to/" class="leading-snug text-base text-gray-900 font-bold">Dev.to</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M120.1 208.3c-3.9-2.9-7.8-4.4-11.7-4.4H91v104.5h17.5c3.9 0 7.8-1.5 11.7-4.4 3.9-2.9 5.8-7.3 5.8-13.1v-69.7c0-5.8-2-10.2-5.8-13.1zM404.1 32H43.9C19.7 32 .1 51.6 0 75.8v360.4C.1 460.4 19.7 480 43.9 480h360.2c24.2 0 43.8-19.6 43.9-43.8V75.8c-.1-24.2-19.7-43.8-43.9-43.8zM154.2 291.2c0 18.8-11.6 47.3-48.4 47.3h-46.4V173h47.4c35.4 0 47.4 28.5 47.4 47.3l0 70.9zm100.7-88.7H201.6v38.4h32.6v29.6H201.6v38.4h53.3v29.6h-62.2c-11.2 .3-20.4-8.5-20.7-19.7V193.7c-.3-11.2 8.6-20.4 19.7-20.7h63.2l0 29.5zm103.6 115.3c-13.2 30.8-36.9 24.6-47.4 0l-38.5-144.8h32.6l29.7 113.7 29.6-113.7h32.6l-38.5 144.8z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="Go to Dev.to Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M120.1 208.3c-3.9-2.9-7.8-4.4-11.7-4.4H91v104.5h17.5c3.9 0 7.8-1.5 11.7-4.4 3.9-2.9 5.8-7.3 5.8-13.1v-69.7c0-5.8-2-10.2-5.8-13.1zM404.1 32H43.9C19.7 32 .1 51.6 0 75.8v360.4C.1 460.4 19.7 480 43.9 480h360.2c24.2 0 43.8-19.6 43.9-43.8V75.8c-.1-24.2-19.7-43.8-43.9-43.8zM154.2 291.2c0 18.8-11.6 47.3-48.4 47.3h-46.4V173h47.4c35.4 0 47.4 28.5 47.4 47.3l0 70.9zm100.7-88.7H201.6v38.4h32.6v29.6H201.6v38.4h53.3v29.6h-62.2c-11.2 .3-20.4-8.5-20.7-19.7V193.7c-.3-11.2 8.6-20.4 19.7-20.7h63.2l0 29.5zm103.6 115.3c-13.2 30.8-36.9 24.6-47.4 0l-38.5-144.8h32.6l29.7 113.7 29.6-113.7h32.6l-38.5 144.8z"/></svg>
              </div>
             </a>
 
@@ -334,7 +334,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://discord.com/" class="leading-snug text-base text-gray-900 font-bold">Discord</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" aria-label= "Go to Discord Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg>
              </div>
             </a>
 
@@ -343,7 +343,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://webdeveloper.com/" class="leading-snug text-base text-gray-900 font-bold">Webdeveloper.com</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" aria-label="Go to Webdeveloper Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
             </div>
             </a>
 
@@ -355,7 +355,7 @@
       </div>
     </section>
    <!--Container with guides links-->
-    <section class="mt-10 bg-darkwhite" id="guides">
+    <section aria-label="guides navigation links" class="mt-10 bg-darkwhite" id="guides">
       <h3 class="max-w-sm mx-auto pt-10 text-xl font-bold">Guides</h3>
       <div class="max-w-sm mx-auto mt-5">
         <a href="https://devblogs.microsoft.com/">
@@ -363,7 +363,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://devblogs.microsoft.com/" class="leading-snug text-base text-gray-900 font-bold">Microsoft Developer blog</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 32h214.6v214.6H0V32zm233.4 0H448v214.6H233.4V32zM0 265.4h214.6V480H0V265.4zm233.4 0H448V480H233.4V265.4z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="Go to Microsoft Developer blog website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 32h214.6v214.6H0V32zm233.4 0H448v214.6H233.4V32zM0 265.4h214.6V480H0V265.4zm233.4 0H448V480H233.4V265.4z"/></svg>
               </div>
         </a>
 
@@ -372,7 +372,7 @@
                 <div class="ml-2 flex flex-col">
                     <span href="https://developer.mozilla.org/en-US/" class="leading-snug text-base text-gray-900 font-bold">MDN Web Docs</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M22.7 33.4c13.5-4.1 28.1 1.1 35.9 12.9L224 294.3 389.4 46.2c7.8-11.7 22.4-17 35.9-12.9S448 49.9 448 64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V169.7L250.6 369.8c-5.9 8.9-15.9 14.2-26.6 14.2s-20.7-5.3-26.6-14.2L64 169.7V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 49.9 9.2 37.5 22.7 33.4z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="Go to MDN Web Docs Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M22.7 33.4c13.5-4.1 28.1 1.1 35.9 12.9L224 294.3 389.4 46.2c7.8-11.7 22.4-17 35.9-12.9S448 49.9 448 64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V169.7L250.6 369.8c-5.9 8.9-15.9 14.2-26.6 14.2s-20.7-5.3-26.6-14.2L64 169.7V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 49.9 9.2 37.5 22.7 33.4z"/></svg>
               </div>
             </a>
 
@@ -381,7 +381,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://www.freecodecamp.org/" class="leading-snug text-base text-gray-900 font-bold">FreeCodeCamp</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M97.2 96.2c10.4-10.7 16-17.1 16-21.9 0-2.8-1.9-5.5-3.8-7.4A14.8 14.8 0 0 0 101 64.1c-8.5 0-20.9 8.8-35.8 25.7C23.7 137 2.5 182.8 3.4 250.3s17.5 117 54.1 161.9C76.2 435.9 90.6 448 100.9 448a13.6 13.6 0 0 0 8.4-3.8c1.9-2.8 3.8-5.6 3.8-8.4 0-5.6-3.9-12.2-13.2-20.6-44.5-42.3-67.3-97-67.5-165C32.3 188.8 54 137.8 97.2 96.2zM239.5 420.1c.6 .4 .9 .6 .9 .6zm93.8 .6 .2-.1C333.2 420.6 333.2 420.7 333.3 420.6zm3.1-158.2c-16.2-4.2 50.4-82.9-68.1-177.2 0 0 15.5 49.4-62.8 159.6-74.3 104.4 23.5 168.7 34 175.2-6.7-4.4-47.4-35.7 9.6-128.6 11-18.3 25.5-34.9 43.5-72.2 0 0 15.9 22.5 7.6 71.1C287.7 364 354 342.9 355 343.9c22.8 26.8-17.7 73.5-21.6 76.6 5.5-3.7 117.7-78 33-188.1C360.4 238.4 352.6 266.6 336.4 262.4zM510.9 89.7C496 72.8 483.5 64 475 64a14.8 14.8 0 0 0 -8.4 2.8c-1.9 1.9-3.8 4.7-3.8 7.4 0 4.8 5.6 11.3 16 21.9 43.2 41.6 65 92.6 64.8 154.1-.2 68-23 122.6-67.5 165-9.3 8.4-13.2 14.9-13.2 20.6 0 2.8 1.9 5.6 3.8 8.4A13.6 13.6 0 0 0 475.1 448c10.3 0 24.7-12.1 43.5-35.8 36.6-44.9 53.1-94.4 54.1-161.9S552.3 137 510.9 89.7z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" aria-label="Go to FreeCodeCamp Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M97.2 96.2c10.4-10.7 16-17.1 16-21.9 0-2.8-1.9-5.5-3.8-7.4A14.8 14.8 0 0 0 101 64.1c-8.5 0-20.9 8.8-35.8 25.7C23.7 137 2.5 182.8 3.4 250.3s17.5 117 54.1 161.9C76.2 435.9 90.6 448 100.9 448a13.6 13.6 0 0 0 8.4-3.8c1.9-2.8 3.8-5.6 3.8-8.4 0-5.6-3.9-12.2-13.2-20.6-44.5-42.3-67.3-97-67.5-165C32.3 188.8 54 137.8 97.2 96.2zM239.5 420.1c.6 .4 .9 .6 .9 .6zm93.8 .6 .2-.1C333.2 420.6 333.2 420.7 333.3 420.6zm3.1-158.2c-16.2-4.2 50.4-82.9-68.1-177.2 0 0 15.5 49.4-62.8 159.6-74.3 104.4 23.5 168.7 34 175.2-6.7-4.4-47.4-35.7 9.6-128.6 11-18.3 25.5-34.9 43.5-72.2 0 0 15.9 22.5 7.6 71.1C287.7 364 354 342.9 355 343.9c22.8 26.8-17.7 73.5-21.6 76.6 5.5-3.7 117.7-78 33-188.1C360.4 238.4 352.6 266.6 336.4 262.4zM510.9 89.7C496 72.8 483.5 64 475 64a14.8 14.8 0 0 0 -8.4 2.8c-1.9 1.9-3.8 4.7-3.8 7.4 0 4.8 5.6 11.3 16 21.9 43.2 41.6 65 92.6 64.8 154.1-.2 68-23 122.6-67.5 165-9.3 8.4-13.2 14.9-13.2 20.6 0 2.8 1.9 5.6 3.8 8.4A13.6 13.6 0 0 0 475.1 448c10.3 0 24.7-12.1 43.5-35.8 36.6-44.9 53.1-94.4 54.1-161.9S552.3 137 510.9 89.7z"/></svg>
              </div>
             </a>
 
@@ -390,7 +390,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://developers.googleblog.com/en/" class="leading-snug text-base text-gray-900 font-bold">Google Developers blog</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" aria-label="Go to Google Developers blog website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
              </div>
             </a>
 
@@ -399,7 +399,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://stackoverflow.com/" class="leading-snug text-base text-gray-900 font-bold">Stack Overflow</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-label="Go to Stackoverflow Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
              </div>
             </a>
 
@@ -408,7 +408,7 @@
                 <div class="ml-2 flex flex-col">
                   <span href="https://www.geeksforgeeks.org/" class="leading-snug text-base text-gray-900 font-bold">Geeks For Geeks</span> 
                 </div>
-                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M118.6 80c-11.5 0-21.4 7.9-24 19.1L57 260.3c20.5-6.2 48.3-12.3 78.7-12.3c32.3 0 61.8 6.9 82.8 13.5c10.6 3.3 19.3 6.7 25.4 9.2c3.1 1.3 5.5 2.4 7.3 3.2c.9 .4 1.6 .7 2.1 1l.6 .3 .2 .1 .1 0 0 0 0 0s0 0-6.3 12.7h0l6.3-12.7c5.8 2.9 10.4 7.3 13.5 12.7h40.6c3.1-5.3 7.7-9.8 13.5-12.7l6.3 12.7h0c-6.3-12.7-6.3-12.7-6.3-12.7l0 0 0 0 .1 0 .2-.1 .6-.3c.5-.2 1.2-.6 2.1-1c1.8-.8 4.2-1.9 7.3-3.2c6.1-2.6 14.8-5.9 25.4-9.2c21-6.6 50.4-13.5 82.8-13.5c30.4 0 58.2 6.1 78.7 12.3L481.4 99.1c-2.6-11.2-12.6-19.1-24-19.1c-3.1 0-6.2 .6-9.2 1.8L416.9 94.3c-12.3 4.9-26.3-1.1-31.2-13.4s1.1-26.3 13.4-31.2l31.3-12.5c8.6-3.4 17.7-5.2 27-5.2c33.8 0 63.1 23.3 70.8 56.2l43.9 188c1.7 7.3 2.9 14.7 3.5 22.1c.3 1.9 .5 3.8 .5 5.7v6.7V352v16c0 61.9-50.1 112-112 112H419.7c-59.4 0-108.5-46.4-111.8-105.8L306.6 352H269.4l-1.2 22.2C264.9 433.6 215.8 480 156.3 480H112C50.1 480 0 429.9 0 368V352 310.7 304c0-1.9 .2-3.8 .5-5.7c.6-7.4 1.8-14.8 3.5-22.1l43.9-188C55.5 55.3 84.8 32 118.6 32c9.2 0 18.4 1.8 27 5.2l31.3 12.5c12.3 4.9 18.3 18.9 13.4 31.2s-18.9 18.3-31.2 13.4L127.8 81.8c-2.9-1.2-6-1.8-9.2-1.8zM64 325.4V368c0 26.5 21.5 48 48 48h44.3c25.5 0 46.5-19.9 47.9-45.3l2.5-45.6c-2.3-.8-4.9-1.7-7.5-2.5c-17.2-5.4-39.9-10.5-63.6-10.5c-23.7 0-46.2 5.1-63.2 10.5c-3.1 1-5.9 1.9-8.5 2.9zM512 368V325.4c-2.6-.9-5.5-1.9-8.5-2.9c-17-5.4-39.5-10.5-63.2-10.5c-23.7 0-46.4 5.1-63.6 10.5c-2.7 .8-5.2 1.7-7.5 2.5l2.5 45.6c1.4 25.4 22.5 45.3 47.9 45.3H464c26.5 0 48-21.5 48-48z"/></svg>
+                <svg class="h-8 px-3 text-md font-bold text-blue-400 hover:bg-blue-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" aria-label="Go to Geeks For Geeks Website"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M118.6 80c-11.5 0-21.4 7.9-24 19.1L57 260.3c20.5-6.2 48.3-12.3 78.7-12.3c32.3 0 61.8 6.9 82.8 13.5c10.6 3.3 19.3 6.7 25.4 9.2c3.1 1.3 5.5 2.4 7.3 3.2c.9 .4 1.6 .7 2.1 1l.6 .3 .2 .1 .1 0 0 0 0 0s0 0-6.3 12.7h0l6.3-12.7c5.8 2.9 10.4 7.3 13.5 12.7h40.6c3.1-5.3 7.7-9.8 13.5-12.7l6.3 12.7h0c-6.3-12.7-6.3-12.7-6.3-12.7l0 0 0 0 .1 0 .2-.1 .6-.3c.5-.2 1.2-.6 2.1-1c1.8-.8 4.2-1.9 7.3-3.2c6.1-2.6 14.8-5.9 25.4-9.2c21-6.6 50.4-13.5 82.8-13.5c30.4 0 58.2 6.1 78.7 12.3L481.4 99.1c-2.6-11.2-12.6-19.1-24-19.1c-3.1 0-6.2 .6-9.2 1.8L416.9 94.3c-12.3 4.9-26.3-1.1-31.2-13.4s1.1-26.3 13.4-31.2l31.3-12.5c8.6-3.4 17.7-5.2 27-5.2c33.8 0 63.1 23.3 70.8 56.2l43.9 188c1.7 7.3 2.9 14.7 3.5 22.1c.3 1.9 .5 3.8 .5 5.7v6.7V352v16c0 61.9-50.1 112-112 112H419.7c-59.4 0-108.5-46.4-111.8-105.8L306.6 352H269.4l-1.2 22.2C264.9 433.6 215.8 480 156.3 480H112C50.1 480 0 429.9 0 368V352 310.7 304c0-1.9 .2-3.8 .5-5.7c.6-7.4 1.8-14.8 3.5-22.1l43.9-188C55.5 55.3 84.8 32 118.6 32c9.2 0 18.4 1.8 27 5.2l31.3 12.5c12.3 4.9 18.3 18.9 13.4 31.2s-18.9 18.3-31.2 13.4L127.8 81.8c-2.9-1.2-6-1.8-9.2-1.8zM64 325.4V368c0 26.5 21.5 48 48 48h44.3c25.5 0 46.5-19.9 47.9-45.3l2.5-45.6c-2.3-.8-4.9-1.7-7.5-2.5c-17.2-5.4-39.9-10.5-63.6-10.5c-23.7 0-46.2 5.1-63.2 10.5c-3.1 1-5.9 1.9-8.5 2.9zM512 368V325.4c-2.6-.9-5.5-1.9-8.5-2.9c-17-5.4-39.5-10.5-63.2-10.5c-23.7 0-46.4 5.1-63.6 10.5c-2.7 .8-5.2 1.7-7.5 2.5l2.5 45.6c1.4 25.4 22.5 45.3 47.9 45.3H464c26.5 0 48-21.5 48-48z"/></svg>
             </div>
             </a>
 
@@ -494,7 +494,7 @@
       
     </section>
 <!--Footer-->
-    <section class="bg-background">
+    <section role="footer" class="bg-background">
       <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav class="flex flex-wrap justify-center -mx-5 -my-2">
               <div class="px-5 py-2">
