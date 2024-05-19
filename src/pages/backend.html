@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                                    <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -10,13 +10,13 @@
     </head>
 <body>
 <!--Navigation-->
-    <section>
+    <section role="navigation">
         <nav class="relative px-4 py-4 flex justify-between items-center bg-navigation">
           <a href="/index.html" class="text-3xl font-bold leading-none">
             <img class="h-8 w-8 lg:h-10 lg:w-10" src="/images/imagelogo.png" alt="logo">
           </a>
           <div class="lg:hidden">
-            <button class="navbar-burger flex items-center text-blue-600 p-3">
+            <button aria-label="open navigation menu" class="navbar-burger flex items-center text-blue-600 p-3">
               <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#808080" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
               </svg>
             </button>
@@ -38,7 +38,7 @@
               <a href="/index.html" class="mr-auto text-3xl font-bold leading-none">
                 <img class="h-8 w-8" src="/images/imagelogo.png" alt="logo">
               </a>
-              <button class="navbar-close">
+              <button aria-label="close navigation menu" class="navbar-close">
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#808080" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
               </button>
             </div>
@@ -72,7 +72,7 @@
       </div>
     </section>
 
-    <section id="features" class="px-4 space-y-6 bg-slate-50 py-8 md:py-12 lg:py-20">
+    <section aria-label="feature courses links" id="features" class="px-4 space-y-6 bg-slate-50 py-8 md:py-12 lg:py-20">
 
       <div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-left">
   
@@ -89,7 +89,7 @@
           <div
               class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
               <div class="flex  flex-col justify-between rounded-md p-6">
-                  <img src="/images/udemybackendnode.png" alt="">
+                  <img src="/images/udemybackendnode.png" alt="Screenshot of Udemy NodeJS Developer Course Page">
                   <div class="space-y-2">
                       <h3 class="font-bold text-lg py-4">Complete NodeJS Developer 2024 [Udemy]</h3>
                       <p class="text-base text-muted-foreground">Using the latest version of Node, this course is focused on efficiency and turning you into a Back End or Fullstack developer. Never spend time on confusing, out of date, incomplete tutorials anymore! Graduates of Andrei’s courses are now working at Google, Tesla, Amazon, Apple, IBM, JP Morgan, Facebook, + other top tech companies for a reason.</p>
@@ -136,7 +136,7 @@
           <div
               class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
               <div class="flex  flex-col justify-between rounded-md p-6">
-                  <img src="/images/metabackend.png" alt="">
+                  <img src="/images/metabackend.png" alt="Screenshot of Meta Back-End Developer Course Page">
                   <div class="space-y-2">
                       <h3 class="font-bold text-lg py-4">Meta Back-End Developer Professional Certificate [Coursera]</h3>
                       <p class="text-base text-muted-foreground">This is a beginner-friendly course which will help you build job-ready skills for an in-demand career and earn a credential from Meta. By the end of this course, you’ll gain all the technical skills required to become a successul backend developer. Skills like Django, MySQL, JavaScript, Linux, web development, Bash, Github, Version Control, Pseudocode, etc.</p>
@@ -207,7 +207,7 @@
               
                       </ul>
                       <div class="py-5">
-                        <a href="https://www.geeksforgeeks.org/best-backend-development-courses/" class="text-blue-700 hover:underline">Visit Coursera</a>
+                        <a href="https://www.geeksforgeeks.org/best-backend-development-courses/" class="text-blue-700 hover:underline">Visit Coursera</a> <!--wrong link --> 
                       </div>
                   </div>
               </div>
@@ -216,7 +216,7 @@
           <div
               class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
               <div class="flex  flex-col justify-between rounded-md p-6">
-                  <img src="/images/codeacademyback.png" alt="">
+                  <img src="/images/codeacademyback.png" alt="Screenshot of CodeAcademy Back-End Engineer Course Page">
                   <div class="space-y-2">
                       <h3 class="font-bold text-lg py-4">Become Back-End Engineer [Codecademy]</h3>
                       <p class="text-base text-muted-foreground">This backend development course is specially designed for backend developers who wanted to gain the skills and portfolio needed to start your career as a Back-End Engineer in this curated career path.
@@ -272,7 +272,7 @@
           <div
           class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
           <div class="flex  flex-col justify-between rounded-md p-6">
-              <img src="/images/udacityback.png" alt="">
+              <img src="/images/udacityback.png" alt="Screenshot of Udacity Intro to Backend Course Page">
               <div class="space-y-2">
                   <h3 class="font-bold text-lg py-4">Intro to Backend [Udacity]</h3>
                   <p class="text-base text-muted-foreground">This course is basically for those who are complete beginner in the field of backend development. With this course you can learn about basic terminology like how the web works, what are databases, authentication and security and many more things.It is designed to help you to understand the basics of backend development and to build a strong foundation for your career in backend development. 
@@ -312,7 +312,7 @@
           <div
           class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
           <div class="flex  flex-col justify-between rounded-md p-6">
-              <img src="/images/mdn.png" alt="">
+              <img src="/images/mdn.png" alt="Screenshot of MDN Curriculum Page">
               <div class="space-y-2">
                   <h3 class="font-bold text-lg py-4">MDN Curriculum</h3>
                   <p class="text-base text-muted-foreground">The MDN Curriculum provides a structured guide to the essential skills and practices for being a successful front-end developer, along with recommended learning resources. The go-to resource for the essential skills and knowledge every front-end developer needs for career success and industry relevance. Developed by Mozilla and refined with insights from the broader MDN community.
@@ -360,7 +360,7 @@
           <div
           class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
           <div class="flex  flex-col justify-between rounded-md p-6">
-              <img src="/images/udemy.png" alt="">
+              <img src="/images/udemy.png" alt="Screenshot of Udemy Front End Dev Course Page">
               <div class="space-y-2">
                   <h3 class="font-bold text-lg py-4">Udemy</h3>
                   <p class="text-base text-muted-foreground">Frontend web developers need to seamlessly switch between multiple languages and have a good grasp of how the web works at a fundamental level. Whether you want help learning HTML, CSS, JavaScript, or one of the big frameworks like Vue.js or React, Udemy has a course for you.
@@ -414,7 +414,7 @@
       </div>
     </section>
     
-    <section class="bg-background">
+    <section role="footer" class="bg-background">
       <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav class="flex flex-wrap justify-center -mx-5 -my-2">
               <div class="px-5 py-2">

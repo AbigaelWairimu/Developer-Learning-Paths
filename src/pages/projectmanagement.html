@@ -10,13 +10,13 @@
     </head>
 <body>
 <!--Navigation-->
-    <section>
+    <section role="navigation">
         <nav class="relative px-4 py-4 flex justify-between items-center bg-navigation">
           <a href="/index.html" class="text-3xl font-bold leading-none">
             <img class="h-8 w-8 lg:h-10 lg:w-10" src="/images/imagelogo.png" alt="logo">
           </a>
           <div class="lg:hidden">
-            <button class="navbar-burger flex items-center text-blue-600 p-3">
+            <button aria-label="open navigation menu" class="navbar-burger flex items-center text-blue-600 p-3">
               <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#808080" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
               </svg>
             </button>
@@ -38,7 +38,7 @@
               <a href="/index.html" class="mr-auto text-3xl font-bold leading-none">
                 <img class="h-8 w-8" src="/images/imagelogo.png" alt="logo">
               </a>
-              <button class="navbar-close">
+              <button aria-label="close navigation" class="navbar-close">
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#808080" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
               </button>
             </div>
@@ -72,7 +72,7 @@
       </div>
     </section>
 <!--Feature links-->
-    <section id="features" class="px-4 space-y-6 bg-slate-50 py-8 md:py-12 lg:py-20">
+    <section aria-label="feature courses links" id="features" class="px-4 space-y-6 bg-slate-50 py-8 md:py-12 lg:py-20">
 
       <div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-left">
   
@@ -89,7 +89,7 @@
           <div
               class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
               <div class="flex  flex-col justify-between rounded-md p-6">
-                  <img src="/images/Frontend-masters.png" alt="">
+                  <img src="/images/Frontend-masters.png" alt="Screenshot of Frontend Masters Homepage">
                   <div class="space-y-2">
                       <h3 class="font-bold text-lg py-4">Frontend Masters</h3>
                       <p class="text-base text-muted-foreground">At Frontend Masters, we pride ourselves on offering courses designed and taught by leading experts actively employing their skills at renowned companies such as Netflix, Spotify, Google, and Stripe. Our curriculum is continually refreshed to align with the most recent advancements, guaranteeing that our learners are equipped with industry-standard best practices and cutting-edge techniques.</p>
@@ -116,7 +116,7 @@
           <div
               class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
               <div class="flex  flex-col justify-between rounded-md p-6">
-                  <img src="/images/w3schools.png" alt="">
+                  <img src="/images/w3schools.png" alt="Screenshot of W3 Schools Homepage">
                   <div class="space-y-2">
                       <h3 class="font-bold text-lg py-4">W3Schools</h3>
                       <p class="text-base text-muted-foreground">W3Schools is a popular resource for beginners and intermediate learners looking to gain practical knowledge and skills in web development. It provides clear and easy-to-understand explanations along with practical examples and exercises.</p>
@@ -166,7 +166,7 @@
           <div
               class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
               <div class="flex  flex-col justify-between rounded-md p-6">
-                  <img src="/images/freecodecamp.png" alt="">
+                  <img src="/images/freecodecamp.png" alt="Screenshot of FreeCodeCamp Homepage">
                   <div class="space-y-2">
                       <h3 class="font-bold text-lg py-4">FreeCodeCamp</h3>
                       <p class="text-base text-muted-foreground">FreeCodeCamp is a community of people from all around the world who are learning to code together. You will learn to code by building dozens of projects, step-by-step, right in your browser, code editor, or mobile app and earn free verified certifications along the way. Aside from the freeCodeCamp core curriculum, they have thousands of free, full-length books, courses, and programming tutorials.
@@ -214,7 +214,7 @@
           <div
           class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
           <div class="flex  flex-col justify-between rounded-md p-6">
-              <img src="/images/coursera.png" alt="">
+              <img src="/images/coursera.png" alt="Screenshot of Coursera Front End Courses Page">
               <div class="space-y-2">
                   <h3 class="font-bold text-lg py-4">Coursera</h3>
                   <p class="text-base text-muted-foreground">The Front-End Web Development courses listed cover essential topics in HTML, CSS, JavaScript, and React, equipping learners with the skills needed to excel in designing modern, responsive websites. Explore these programs to become a proficient front-end developer.
@@ -254,7 +254,7 @@
           <div
           class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
           <div class="flex  flex-col justify-between rounded-md p-6">
-              <img src="/images/mdn.png" alt="">
+              <img src="/images/mdn.png" alt="Screenshot of MDN Curriculum Page">
               <div class="space-y-2">
                   <h3 class="font-bold text-lg py-4">MDN Curriculum</h3>
                   <p class="text-base text-muted-foreground">The MDN Curriculum provides a structured guide to the essential skills and practices for being a successful front-end developer, along with recommended learning resources. The go-to resource for the essential skills and knowledge every front-end developer needs for career success and industry relevance. Developed by Mozilla and refined with insights from the broader MDN community.
@@ -302,7 +302,7 @@
           <div
           class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
           <div class="flex  flex-col justify-between rounded-md p-6">
-              <img src="/images/udemy.png" alt="">
+              <img src="/images/udemy.png" alt="Screenshot of Udemy Front End Dev Course Page">
               <div class="space-y-2">
                   <h3 class="font-bold text-lg py-4">Udemy</h3>
                   <p class="text-base text-muted-foreground">Frontend web developers need to seamlessly switch between multiple languages and have a good grasp of how the web works at a fundamental level. Whether you want help learning HTML, CSS, JavaScript, or one of the big frameworks like Vue.js or React, Udemy has a course for you.
@@ -356,7 +356,7 @@
       </div>
     </section>
 <!--Footer-->   
-    <section class="bg-background">
+    <section role="footer" class="bg-background">
       <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav class="flex flex-wrap justify-center -mx-5 -my-2">
               <div class="px-5 py-2">
